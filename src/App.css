@@ -1,0 +1,77 @@
+* {
+  margin: 0 auto;
+}
+
+.user {
+  position: relative;
+  right: 20px;
+  top: 28px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.profilecard {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px auto;
+  height: 25rem;
+  width: 50rem;
+  box-shadow: 0px 0px 6px 16px;
+  border-radius: 25px;
+  display: flex;
+  margin-top: 40px;
+  background-color: azure;
+}
+.profilecard h3{
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid darkgray;
+}
+.profilepic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 15rem;
+}
+#imagepic {
+  margin-left: 23px;
+  height: 212px;
+  border-radius: 7rem;
+  width: 200px;
+}
+
+.profiledetails {
+  border-left: 1px solid darkgray;
+  height: 25rem;
+  width: 34.9rem;
+}
+.details{
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  box-shadow: 0px 0px 8px 6px;
+}
+.details h6{
+  font-weight: normal;
+  font-size: 17px;
+}
+.details span{
+  font-size: 14px;
+}
+.add_blog{    
+  width: 35rem;
+  box-shadow: 1px 2px 6px 8px;
+  margin: 14px auto;
+  background-color: ghostwhite;
+}
+.addblog{
+  display: flex;
+  justify-content: center;
+}
+.alert{
+position: fixed;
+left: 58rem;
+top: 125px;}
