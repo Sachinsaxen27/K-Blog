@@ -3,7 +3,7 @@ import BlogAPI from './BlogAPI'
 function BlogState(props) {
   const [blogges, setMyblogges] = useState([])
   const GetBlog = async () => {
-    const response = await fetch('http://localhost:5000/api/blogadd/fetchblog/favourite', {
+    const response = await fetch('http://localhost:3001/api/blogadd/fetchblog/favourite', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

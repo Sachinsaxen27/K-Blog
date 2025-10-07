@@ -84,7 +84,7 @@ function Home(props) {
         )
     };
     const AddNewBlog = async (element) => {
-        const response = await fetch('http://localhost:5000/api/blogadd/newblog', {
+        const response = await fetch('http://localhost:3001/api/blogadd/newblog', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

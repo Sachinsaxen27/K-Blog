@@ -21,7 +21,7 @@ function Blog() {
   const [blog, setMyblog] = useState([])
   let history = useNavigate()
   const fetchallblog = async () => {
-    const response = await fetch('http://localhost:5000/api/blogadd/fetchallblog', {
+    const response = await fetch('http://localhost:3001/api/blogadd/fetchallblog', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ function Blog() {
     }
   };
   const AddNewBlog = async (element) => {
-    const response = await fetch('http://localhost:5000/api/blogadd/newblog', {
+    const response = await fetch('http://localhost:3001/api/blogadd/newblog', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

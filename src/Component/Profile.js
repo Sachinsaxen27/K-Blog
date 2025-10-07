@@ -4,7 +4,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function Profile() {
     const [data,setMydata]=useState([])
     const fetchuser=async()=>{
-      const response= await fetch('http://localhost:5000/api/userlogin/getuserdata',{
+      const response= await fetch('http://localhost:3001/api/userlogin/getuserdata',{
         method:"GET",
         headers:{
           "content-type":"application/json",
