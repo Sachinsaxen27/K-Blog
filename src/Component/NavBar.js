@@ -1,9 +1,8 @@
 import React, {useState } from 'react'
 import "../App.css"
-// import NewsComp from './NewsComp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link, useNavigate } from 'react-router-dom';
-// import FooterBar from './FooterBar';
+
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import notfound from './item.avif'
+
 const style = {
     position: 'absolute',
     top: '50%',
@@ -56,7 +58,7 @@ function Favourite() {
     return (
         <>
             <div className='row my-2' style={{ overflowX: 'auto', width: '79.7rem' }}>
-                {blogges?.map((element, index) => {
+                {blogges.length>0?blogges?.map((element, index) => {
                     return <div className="col md-4 " key={index}>
                         <div className={`card my-1`} style={{ width: "19rem", height: "25.1rem", overflow: "hidden" }}>
                             <img src={element.image? element.image : "https://images.moneycontrol.com/static-mcnews/2023/02/FM-1-737x435.jpeg"} className="card-img-top w-100 p-3" style={{ height: "200px" }} alt="..." />
@@ -69,7 +71,14 @@ function Favourite() {
                             </div>
                         </div>
                     </div>
-                })}
+                }): <div style={{ margin: "0 auto" ,width:'40rem',height:'29rem'}}>
+                <img src={notfound} alt="Not Found" style={{ width: '34rem', height: '16rem' }} />
+                <div className="container mx-5">
+                    <h1 style={{ fontWeight: '100', fontSize: "100px" }}>Sorry</h1>
+                    <h5 style={{ fontWeight: '100', fontSize: '25px' }}>We Couldn't found the item</h5>
+                    <h6 style={{ fontWeight: '100', fontSize: '25px' }}>Try seraching or go to <Link to='/' style={{ textDecoration: 'none' }}>K-Blog's Home Page</Link> </h6>
+                </div>
+            </div>}
             </div >
             <Modal
                 open={open}

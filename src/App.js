@@ -1,7 +1,6 @@
 import NavBar from "./Component/NavBar";
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import NewsComp from "./Component/NewsComp";
 import Home from "./Component/Home";
 import Blog from "./Component/Blog";
 import LoginPage from "./Component/LoginPage";
@@ -13,7 +12,6 @@ import Favourite from "./Component/Favourite";
 import MyBlog from "./Component/MyBlog";
 import Editblog from "./Component/Editblog";
 import OpenBlog from "./Component/OpenBlog";
-// import Science from "./Component/Science";
 function App() {
   return (
     <>
