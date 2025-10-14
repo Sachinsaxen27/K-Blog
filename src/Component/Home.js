@@ -19,7 +19,7 @@ function Home(props) {
     const [totalresult, setMytotalResult] = useState(0)
     const [loading, setMyloading] = useState(false)
     const FetchNews = async () => {
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=${props.category}&from=${year + '-' + month + "-" + predate}&to=${dates.toLocaleDateString()}&sortBy=popularity&apiKey=012f3ecd1eb548918832f932c1cb4c9f&page=${page}&pagesize=6`)
+        const response = await axios.get(`https://newsapi.org/v2/everything?q=${props.category}&from=${year + '-' + month + "-" + predate}&to=${dates.toLocaleDateString()}&sortBy=popularity&apiKey=a92e8782-b0bd-4d67-ac8b-d7ed56a7fa26&page=${page}&pagesize=6`)
         setMyloading(true)
         const json = response.data
         setMyNewsapi(json.articles)
