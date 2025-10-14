@@ -4,7 +4,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function Profile() {
     const [data,setMydata]=useState([])
     const fetchuser=async()=>{
-      const response= await fetch('https://session-backend-tivg.onrender.com/api/userlogin/getuserdata',{
+      const response= await fetch('https://k-blog-article.onrender.com/api/userlogin/getuserdata',{
         method:"GET",
         headers:{
           "content-type":"application/json",

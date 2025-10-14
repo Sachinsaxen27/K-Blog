@@ -14,7 +14,7 @@ function AddBlog() {
     if (!token) {
       setMydata([])
     }
-    const response = await fetch('https://session-backend-tivg.onrender.com/api/userlogin/getuserdata', {
+    const response = await fetch('https://k-blog-article.onrender.com/api/userlogin/getuserdata', {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -31,7 +31,7 @@ function AddBlog() {
   }, [])
   const AddNewBlog = async (e) => {
     e.preventDefault()
-    const response = await fetch('https://session-backend-tivg.onrender.com/api/blogadd/newblog', {
+    const response = await fetch('https://k-blog-article.onrender.com/api/blogadd/newblog', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

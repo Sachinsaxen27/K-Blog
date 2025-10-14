@@ -24,7 +24,7 @@ function Editblog() {
     }
     const handlesubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch(`https://session-backend-tivg.onrender.com/api/blogadd/updateblog/${data._id}`, {
+        const response = await fetch(`https://k-blog-article.onrender.com/api/blogadd/updateblog/${data._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

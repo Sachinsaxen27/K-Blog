@@ -3,7 +3,7 @@ import BlogAPI from './BlogAPI'
 function BlogState(props) {
   const [blogges, setMyblogges] = useState([])
   const GetBlog = async () => {
-    const response = await fetch('https://session-backend-tivg.onrender.com/api/blogadd/fetchblog/favourite', {
+    const response = await fetch('https://k-blog-article.onrender.com/api/blogadd/fetchblog/favourite', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

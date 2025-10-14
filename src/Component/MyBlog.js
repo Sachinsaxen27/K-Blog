@@ -25,7 +25,7 @@ function MyBlog() {
     let location = useLocation()
     let history = useNavigate()
     const GetBlog = async () => {
-        const response = await fetch(`https://session-backend-tivg.onrender.com/api/blogadd/fetchblog${location.pathname}`, {
+        const response = await fetch(`https://k-blog-article.onrender.com/api/blogadd/fetchblog${location.pathname}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function MyBlog() {
         setMyblogges(json)
     }
     const handledelet = async (id) => {
-        const response = await fetch(`https://session-backend-tivg.onrender.com/api/blogadd/deleteblog/unfavourite/${id}`, {
+        const response = await fetch(`https://k-blog-article.onrender.com/api/blogadd/deleteblog/unfavourite/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
