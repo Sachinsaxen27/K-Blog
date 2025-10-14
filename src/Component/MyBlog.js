@@ -25,7 +25,7 @@ function MyBlog() {
     let location = useLocation()
     let history = useNavigate()
     const GetBlog = async () => {
-        const response = await fetch(`http://localhost:3001/api/blogadd/fetchblog${location.pathname}`, {
+        const response = await fetch(`http://localhost:5000/api/blogadd/fetchblog${location.pathname}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function MyBlog() {
         setMyblogges(json)
     }
     const handledelet = async (id) => {
-        const response = await fetch(`http://localhost:3001/api/blogadd/deleteblog/unfavourite/${id}`, {
+        const response = await fetch(`http://localhost:5000/api/blogadd/deleteblog/unfavourite/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

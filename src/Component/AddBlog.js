@@ -14,7 +14,7 @@ function AddBlog() {
     if (!token) {
       setMydata([])
     }
-    const response = await fetch('http://localhost:3001/api/userlogin/getuserdata', {
+    const response = await fetch('http://localhost:5000/api/userlogin/getuserdata', {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -31,7 +31,7 @@ function AddBlog() {
   }, [])
   const AddNewBlog = async (e) => {
     e.preventDefault()
-    const response = await fetch('http://localhost:3001/api/blogadd/newblog', {
+    const response = await fetch('http://localhost:5000/api/blogadd/newblog', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
