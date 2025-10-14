@@ -56,7 +56,7 @@ function Home(props) {
         // eslint-disable-next-line 
     }, [])
     const FetchNext = async () => {
-        const response = await axios.get(`https://newsapi.org/v2/everything?q=${props.category}&from=${year + '-' + month + "-" + predate}&to=${dates.toLocaleDateString()}&sortBy=popularity&apiKey=dc02ca6ff93e4e90b2681bb1451b2465&page=${page + 1}&pagesize=6`)
+        const response = await axios.get(`https://newsapi.org/v2/everything?q=${props.category}&from=${year + '-' + month + "-" + predate}&to=${dates.toLocaleDateString()}&sortBy=popularity&apiKey=a92e8782-b0bd-4d67-ac8b-d7ed56a7fa26&page=${page + 1}&pagesize=6`)
         setMypage(page + 1)
         setMyloading(true)
         const json = response.data
