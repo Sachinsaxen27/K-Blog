@@ -22,7 +22,7 @@ function Favourite() {
     let location = useLocation()
     console.log(location.pathname)
     const GetBlog = async () => {
-        const response = await fetch(`http://localhost:5000/api/blogadd/fetchblog${location.pathname}`, {
+        const response = await fetch(`https://session-backend-tivg.onrender.com/api/blogadd/fetchblog${location.pathname}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function Favourite() {
     }
     const handledelet = async (id) => {
         console.log(id)
-        const response = await fetch(`http://localhost:5000/api/blogadd/deleteblog/favourtie/${id}`, {
+        const response = await fetch(`https://session-backend-tivg.onrender.com/api/blogadd/deleteblog/favourtie/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

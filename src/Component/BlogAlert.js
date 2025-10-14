@@ -12,7 +12,7 @@ function BlogAlert() {
             Alerts('', '');
           }, 3000);
         }
-      }, [status]);
+      }, [status,Alerts]);
     return (
         <>
             {status.msg && <Stack sx={{ width: '22rem',zIndex:'1000000000000'}} spacing={2} className='alert'>

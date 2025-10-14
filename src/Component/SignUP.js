@@ -23,7 +23,7 @@ function SignUP() {
       }
     const handlesubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch('http://localhost:5000/api/userlogin/usersignup', {
+        const response = await fetch('https://session-backend-tivg.onrender.com/api/userlogin/usersignup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
